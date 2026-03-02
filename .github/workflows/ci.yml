@@ -1,7 +1,10 @@
 # We need a trigger
-# This will run the workflow on every push
 on:
+  # This will run the workflow on every push
   push:
+  # One trigger is enough.
+  # We added this so we can run the workflow manually as well without making changes.
+  workflow_dispatch:
 
 # We need at least on job
 jobs:
