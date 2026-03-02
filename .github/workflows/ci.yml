@@ -1,9 +1,13 @@
+# We need a trigger
+# This will run the workflow on every push
 on:
   push:
 
+# We need at least on job
 jobs:
+  # The name of the job can be any arbitrary name. In this it will be "ci"
   ci:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
     steps:
       - run: echo Hello World
 
